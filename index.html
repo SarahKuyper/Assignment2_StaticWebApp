@@ -10,10 +10,51 @@
 <body>
     <header>
         <h1>Meet my characters!</h1>
+    </header>
+
+    <form>
+        <button>Search</button>
+        <input type="text" id="name" name="name" placeholder="Who are you looking for?">
+        <style>
+            button {
+                background-color: #4CAF50;
+                color: white;
+                padding: 5px 10px;
+                border: none;
+                cursor: pointer;
+                margin-bottom: 10px;
+            }
+
+            button:hover {
+                background-color: #45a049;
+            }
+
+            input[type=text] {
+                padding: 5px;
+                margin-bottom: 10px;
+                width: 500px;
+            }
+        </style>
+    </form>
+
     <div class="grid">
+        <style>
+            .grid {
+                display: grid;
+                grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+                padding: 20px;
+            }
+
+            .grid img {
+                max-width: 100%;
+                height: auto;
+                border-radius: 10px;
+                border: 2px solid #000000;
+            }
+        </style>
+
         <div>
-            <img
-                src="https://images.artfight.net/character/th_h4IF7FQLiAegGUAhX1BKTIZJlSmBWbec830wqrzikD2oR2b1JaK6ezKzhqfh.jpg?t=1652300045"
+            <img src="https://images.artfight.net/character/th_h4IF7FQLiAegGUAhX1BKTIZJlSmBWbec830wqrzikD2oR2b1JaK6ezKzhqfh.jpg?t=1652300045"
                 alt="Original Charater, Oliver" width="200" height="200">
             <ul>
                 <li> Name: Oliver</li>
@@ -63,6 +104,7 @@
             </ul>
         </div>
     </div>
+
     <footer id="footer">
         <p>&copy; 2023 My Website. All rights reserved.</p>
     </footer>
