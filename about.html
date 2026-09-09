@@ -8,15 +8,35 @@
 </head>
 
 <body>
+    <div class="grid">
+        <style>
+            .grid {
+                display: grid;
+                grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+                padding: 10px;
+                place-items: center;
+            }
+
+            .grid {
+                max-width: 100%;
+                height: auto;
+                border-radius: 10px;
+                border: 2px solid #000000;
+            }
+        </style>
+        <div><a href="about.html">About the Site</a></div>
+        <div><a href="index.html">Character Index</a></div>
+        <div><a href="details.html">Character Details</a></div>
+        <div><a href="new-character-form.html">Character Creation</a></div>
+    </div>
     <header>
         <h1>About Page</h1>
-        <img src="https://i.pinimg.com/1200x/97/c1/01/97c1014d15f7f53a486f4e05142294cb.jpg" alt="HolyMoly Pinterest Banner" style="max-width: 100%;">
+        <img src="https://i.pinimg.com/1200x/97/c1/01/97c1014d15f7f53a486f4e05142294cb.jpg"
+            alt="HolyMoly Pinterest Banner" style="max-width: 100%;">
     </header>
     <main>
         <p>Placeholder text (explain choice of theme/layout or a short bio).</p>
     </main>
-
-    <a href="index.html">Meet the Characters</a>
 
     <div id="footer">
         <p>&copy; 2023 My Website. All rights reserved.</p>

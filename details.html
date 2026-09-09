@@ -8,6 +8,27 @@
 </head>
 
 <body>
+    <div class="grid">
+        <style>
+            .grid {
+                display: grid;
+                grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+                padding: 10px;
+                place-items: center;
+            }
+
+            .grid {
+                max-width: 100%;
+                height: auto;
+                border-radius: 10px;
+                border: 2px solid #000000;
+            }
+        </style>
+        <div><a href="about.html">About the Site</a></div>
+        <div><a href="index.html">Character Index</a></div>
+        <div><a href="details.html">Character Details</a></div>
+        <div><a href="new-character-form.html">Character Creation</a></div>
+    </div>
     <header>
         <h1>Bellamie</h1>
     </header>
@@ -18,11 +39,9 @@
     <p>Backstory:</p>
     <p>Interests:</p>
 
-
-    <a href="index.html">Back to Character Index</a>
-
     <div id="footer">
         <p>&copy; 2023 My Website. All rights reserved.</p>
     </div>
 </body>
+
 </html>

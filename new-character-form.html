@@ -8,51 +8,73 @@
 </head>
 
 <body>
-    <header>
-        <h1>Create a Character</h1>
-    <form>
-        <input type="img" id="image" name="image" placeholder="Provide a link to an image of your character">
-        <input type="text" id="name" name="name" placeholder="What is the name of your character?">
-        <input type="text" id="species" name="species" placeholder="What is their species?">
-        <input type="text" id="abilities" name="abilities" placeholder="Any abilities?">
-        <textarea id="backstory" name="backstory" placeholder="What is their backstory?"></textarea>
-        <textarea id="interests" name="interests" placeholder="What're their interests?"></textarea>
-        <button>Create your character!</button>
-
+    <div class="grid">
         <style>
-            button {
-                background-color: #4CAF50;
-                color: white;
-                padding: 5px 10px;
-                border: none;
-                cursor: pointer;
-                margin-bottom: 10px;
+            .grid {
+                display: grid;
+                grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+                padding: 10px;
+                place-items: center;
             }
 
-            button:hover {
-                background-color: #45a049;
-            }
-
-            input[type=img] {
-                padding: 5px;
-                margin-bottom: 10px;
-                width: 90%;
-            }
-
-            input[type=text] {
-                padding: 5px;
-                margin-bottom: 10px;
-                width: 90%;
-            }
-
-            textarea {
-                padding: 5px;
-                margin-bottom: 10px;
-                width: 90%;
-                height: 100px;
+            .grid {
+                max-width: 100%;
+                height: auto;
+                border-radius: 10px;
+                border: 2px solid #000000;
             }
         </style>
-    </form>
+        <div><a href="about.html">About the Site</a></div>
+        <div><a href="index.html">Character Index</a></div>
+        <div><a href="details.html">Character Details</a></div>
+        <div><a href="new-character-form.html">Character Creation</a></div>
+    </div>
+    </div>
+    <header>
+        <h1>Create a Character</h1>
+        <form>
+            <input type="img" id="image" name="image" placeholder="Provide a link to an image of your character">
+            <input type="text" id="name" name="name" placeholder="What is the name of your character?">
+            <input type="text" id="species" name="species" placeholder="What is their species?">
+            <input type="text" id="abilities" name="abilities" placeholder="Any abilities?">
+            <textarea id="backstory" name="backstory" placeholder="What is their backstory?"></textarea>
+            <textarea id="interests" name="interests" placeholder="What're their interests?"></textarea>
+            <button>Create your character!</button>
+
+            <style>
+                button {
+                    background-color: #4CAF50;
+                    color: white;
+                    padding: 5px 10px;
+                    border: none;
+                    cursor: pointer;
+                    margin-bottom: 10px;
+                }
+
+                button:hover {
+                    background-color: #45a049;
+                }
+
+                input[type=img] {
+                    padding: 5px;
+                    margin-bottom: 10px;
+                    width: 90%;
+                }
+
+                input[type=text] {
+                    padding: 5px;
+                    margin-bottom: 10px;
+                    width: 90%;
+                }
+
+                textarea {
+                    padding: 5px;
+                    margin-bottom: 10px;
+                    width: 90%;
+                    height: 100px;
+                }
+            </style>
+        </form>
 </body>
 
 </html>
