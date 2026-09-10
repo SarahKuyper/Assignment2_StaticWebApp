@@ -5,18 +5,33 @@
     <meta charset="utf-8">
     <title>About Page</title>
     <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #703131;
+        }
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            padding: 10px;
+            place-items: center;
+            background-color: #c71f1f;
+        }
+        header{
+            color:antiquewhite;   
+        }
+        main{
+            color:antiquewhite;
+            padding: 10px;
+        }
+        </style>
 </head>
 
 <body>
     <div class="grid">
         <style>
-            .grid {
-                display: grid;
-                grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-                padding: 10px;
-                place-items: center;
-            }
-
             .grid {
                 max-width: 100%;
                 height: auto;
@@ -40,6 +55,16 @@
 
     <div id="footer">
         <p>&copy; 2023 My Website. All rights reserved.</p>
+        <style>
+            #footer {
+                background-color: #c71f1f;
+                color: white;
+                text-align: center;
+                padding: 10px;
+                position: fixed;
+                bottom: 0;
+                width: 100%;
+            }
     </div>
 </body>
 
