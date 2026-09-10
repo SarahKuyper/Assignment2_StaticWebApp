@@ -12,6 +12,7 @@
             padding: 0;
             background-color: #7692ff;
         }
+
         .grid {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
@@ -19,14 +20,23 @@
             place-items: center;
             background-color: #abd2fa;
         }
-        header{
+
+        header {
             color: #e5fcff;
         }
-        main{
-            color:#e5fcff;
+
+        main {
+            color: #e5fcff;
             padding: 10px;
         }
-        </style>
+
+        footer {
+            background-color: #091540;
+            color: #e5fcff;
+            text-align: center;
+            padding: 10px;
+        }
+    </style>
 </head>
 
 <body>
@@ -48,26 +58,30 @@
         <h1>About Page</h1>
         <img src="https://i.pinimg.com/1200x/97/c1/01/97c1014d15f7f53a486f4e05142294cb.jpg"
             alt="HolyMoly Pinterest Banner" style="max-width: 100%;">
-    </header>
-    <main>
-        <p>Placeholder text (explain choice of theme/layout or a short bio).</p>
-    </main>
-
-    <div id="footer">
-        <p>&copy; 2023 My Website. All rights reserved.</p>
         <style>
-            #footer {
-                background-color: #abd2fa;
-                color: #ffffff;
+            img {
                 border-color: #091540;
                 border-style: solid;
-                text-align: center;
-                padding: 10px;
-                position: fixed;
-                bottom: 0;
-                width: 100%;
+                border-width: 2px;
             }
-    </div>
+        </style>
+    </header>
+    <main>
+        <p>Greetings and salutations! This webpage showcases a small collection of my original
+            characters.</p>
+        <p>I chose this color palette because it coincides very well with the background colors of
+            my characters' profile pictures. I chose a grid layout for the profiles mainly because it
+            was the easiest way to display them with my current skills. I'd like to add more profiles
+            to the index and an image link to the character's reference sheet at some point.</p>
+        <p>As for why I chose that specific picture for the About page banner. It's because I like to
+            have fun with my work LOL.
+        </p>
+        <p>Thank you for visiting my site! I hope you enjoy it!</p>
+    </main>
+
+    <footer id="footer">
+        <p>&copy; 2023 My Website. All rights reserved.</p>
+    </footer>
 </body>
 
 </html>

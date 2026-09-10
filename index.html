@@ -10,6 +10,15 @@
 <body>
     <div class="grid">
         <style>
+            body {
+                font-family: Arial, sans-serif;
+                margin: 0;
+                padding: 0;
+                background-color: #7692ff;
+                color: #3d518c;
+
+            }
+
             .grid {
                 display: grid;
                 grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
@@ -21,9 +30,18 @@
                 max-width: 100%;
                 height: auto;
                 border-radius: 10px;
-                border: 2px solid #000000;
+                border: 2px solid #091540;
+                background-color: #abd2fa;
+            }
+
+            footer {
+                background-color: #091540;
+                color: #e5fcff;
+                text-align: center;
+                padding: 10px;
             }
         </style>
+
         <div><a href="about.html">About the Site</a></div>
         <div><a href="index.html">Character Index</a></div>
         <div><a href="details.html">Character Details</a></div>
@@ -39,8 +57,8 @@
         <input type="text" id="name" name="name" placeholder="Who are you looking for?">
         <style>
             button {
-                background-color: #4CAF50;
-                color: white;
+                background-color: #1b2cc1;
+                color: #ffffff;
                 padding: 5px 10px;
                 border: none;
                 cursor: pointer;
@@ -48,13 +66,17 @@
             }
 
             button:hover {
-                background-color: #45a049;
+                background-color: #091540;
             }
 
             input[type=text] {
                 padding: 5px;
                 margin-bottom: 10px;
                 width: 500px;
+            }
+
+            header {
+                color: #e5fcff;
             }
         </style>
     </form>
@@ -71,7 +93,7 @@
                 max-width: 100%;
                 height: auto;
                 border-radius: 10px;
-                border: 2px solid #000000;
+                border: 2px solid #abd2fa;
             }
         </style>
 
